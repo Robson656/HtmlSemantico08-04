@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grupo">
+        <header class="cabecalho">
+            <h1>Site Semântico</h1>
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <nav class="navegacao">
+                <h2>Menu Lateral</h2>
+                <ul>
+                    <li>Perfil</li>
+                    <li>Configuração</li>
+                    <li>Ajuda</li>
+                </ul>
+            </nav>
+            <section class="secao">
+                <h3>Painel Princiapal</h3>
+                <p>Nome: <span id="nomeUsuario">Robson</span></p>
+                <p>Curso: <span id="nomeCurso">Desnvolvimento Web Front-End</span></p>
+                <p>Status: <span id="nomeStatus">Ativo</span></p>
+                <hr>
+                <h3>Alterar nome</h3>
+                <div>
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarNome()">Alterar nome</button>
+                    
+                </div>
+                <h3>Alterar curso</h3>
+                <div>
+                    <input type="text" name="inputCurso" id="inputCurso">
+                     <button onclick="alterarCurso()">Alterar curso</button>
+                </div>
+                <h3>Alterar status</h3>
+                <div>
+                    <input type="text" name="inputStatus" id="inputStatus">
+                    <button onclick="alterarStatus()">Atualizar Status</button>
+                </div>
+            </section>
+        </div>
+
+        <footer class="rodape">
+            <p>&copy; Desenvolvido por <strong>Mim</strong></p>
+            <div class="redes">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">Instagram</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="Github">Github</a>
+            </div>
+        </footer>
+    </div>
+    <script src="scrip.js"></script>
+    <img src="https://media.tenor.com/_W0cPaW1oZkAAAA1/say-whaaat.webp" alt="TheVoices" width="500px">
+    <img src="https://media1.tenor.com/m/aw2Mkb0s-YwAAAAC/silly-reaction-meme.gif" alt="" width="500px">
+</body>
+</html>
